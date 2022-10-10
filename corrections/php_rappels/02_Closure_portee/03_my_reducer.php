@@ -25,14 +25,4 @@ echo PHP_EOL ;
 echo my_reduce([1, 2, 3], $sum);
 
 echo PHP_EOL ;
-
-
-echo my_reduce($hydrate(), function($acc, $curr){
-
-    $acc +=  ($curr->price * $curr->quantity) * ($curr->tva + 1);
-
-    return $acc;
-
-}, 0 );
-
-echo PHP_EOL ;
+/* ------- */
