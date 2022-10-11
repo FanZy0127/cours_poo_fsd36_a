@@ -24,7 +24,20 @@ function generate(int $n) {
     }
 }
 
-$generator = generate(43);
+$generator = generate(11);
 foreach ($generator as $value) {
     echo "$value\n";
+}
+
+/*******************************************/
+
+
+function genkV(){
+    for ($i = 0; $i <= 3; $i++) {
+        yield $i => $i + 10;
+    }
+}
+$generator = genkV();
+foreach ($generator as $key => $value) {
+    echo "key: $key value: $value\n";
 }
