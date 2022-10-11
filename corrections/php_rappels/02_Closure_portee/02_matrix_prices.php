@@ -2,7 +2,7 @@
 
 namespace solution_01 {
 
-    $products = [
+    $matrix_of_products = [
         [10, 7, 9, 8, 6],
         [15, 17, 4, 18, 3],
         [2, 20, 101, 81, 62],
@@ -10,24 +10,25 @@ namespace solution_01 {
         [5, 17, 10, 5, 10],
     ];
 
-    function totalTTC(array $products, float $tax = .2): float
+    function totalTTC(array $matrix_of_products, float $tax = .2): float
     {
         $total = 0.00; // on change la valeur par référence
-
+        // $total = 28.8;
         $callback =
             function ($price) use ($tax, &$total) {
+            // [10, 7, 9, 8, 6]
                 if ($price % 2 === 0) // modification 1
                     $total += $price  * ($tax + 1.0);
             };
 
-        // ré-écrire la fonction métier <=> mauvaise approche  modification 2
-        foreach ($products as $product)
-            array_map($callback, $product);
+        // ré-écrire la fonction métier <=> mauvaise approche modification 2
+        foreach ($matrix_of_products as $array_of_products)
+            array_map($callback, $array_of_products);
 
         return round($total, 2);
     }
 
-    echo totalTTC(products: $products) . PHP_EOL;
+    echo totalTTC(matrix_of_products: $matrix_of_products) . PHP_EOL;
 }
 
 namespace solution_02 {
