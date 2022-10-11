@@ -12,7 +12,8 @@ foreach ($generator as $value) {
     echo "$value\n";
 }
 
-echo "ta race Baptiste avec ton cours de merde";
+echo "Autre exemple";
+echo PHP_EOL;
 
 /****************/
 
