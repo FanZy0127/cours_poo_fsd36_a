@@ -1,0 +1,17 @@
+{
+    "name": "alan/app",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alan",
+            "email": "alan.alan@alan.com"
+        }
+    ],
+    "require": {
+        "php-ds/php-ds": "^1.3"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "alan/app",
+    "autoload": {
+        "psr-4": {
+            "Cart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alan",
+            "email": "alan.alan@alan.com"
+        }
+    ],
+    "require": {}
+}

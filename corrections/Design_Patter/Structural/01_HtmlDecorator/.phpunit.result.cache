@@ -1,0 +1,1 @@
+{"version":1,"defects":{"HtmlDecoratorTest::testEmText":3,"HtmlDecoratorTest::testParagraphEmText":3},"times":{"HtmlDecoratorTest::testEmText":0.015,"HtmlDecoratorTest::testEmParagraphText":0.001,"HtmlDecoratorTest::testParagraphEmText":0}}

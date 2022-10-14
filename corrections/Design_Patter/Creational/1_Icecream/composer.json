@@ -1,0 +1,15 @@
+{
+    "name": "baptiste/icecream",
+    "autoload": {
+        "psr-4": {
+            "Icecream\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bbauer02",
+            "email": "bbauer02@gmail.com"
+        }
+    ],
+    "require": {}
+}
