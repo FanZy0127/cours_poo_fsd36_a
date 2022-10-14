@@ -1,0 +1,17 @@
+{
+    "name": "antoine/cart_solid",
+    "authors": [
+        {
+            "name": "Antoine07",
+            "email": "antoine.lucsko@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cart\\" : "src/"
+        }
+    }
+}
